@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ftreal/!svn/ver/1/trunk/config/environments
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ftreal/!svn/ver/1/trunk/config/environments/test.rb
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ftreal/!svn/ver/1/trunk/config/environments/development.rb
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ftreal/!svn/ver/1/trunk/config/environments/production.rb
+END

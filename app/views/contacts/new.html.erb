@@ -1,0 +1,83 @@
+<h1>New contact</h1>
+
+<% form_for(@contact) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_area :last_name %>
+  </p>
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_area :first_name %>
+  </p>
+  <p>
+    <%= f.label :company_name %><br />
+    <%= f.text_area :company_name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_area :title %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_area :email %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </p>
+  <p>
+    <%= f.label :mobile %><br />
+    <%= f.text_field :mobile %>
+  </p>
+  <p>
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </p>
+  <p>
+    <%= f.label :blog %><br />
+    <%= f.text_area :blog %>
+  </p>
+  <p>
+    <%= f.label :facebook %><br />
+    <%= f.text_area :facebook %>
+  </p>
+  <p>
+    <%= f.label :twitter %><br />
+    <%= f.text_area :twitter %>
+  </p>
+  <p>
+    <%= f.label :street_no %><br />
+    <%= f.text_field :street_no %>
+  </p>
+  <p>
+    <%= f.label :street_name %><br />
+    <%= f.text_area :street_name %>
+  </p>
+  <p>
+    <%= f.label :street_type %><br />
+    <%= f.text_field :street_type %>
+  </p>
+  <p>
+    <%= f.label :street_dir %><br />
+    <%= f.text_field :street_dir %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_area :city %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_area :state %>
+  </p>
+  <p>
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', contacts_path %>

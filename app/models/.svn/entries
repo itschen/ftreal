@@ -1,0 +1,40 @@
+8
+
+dir
+11
+http://svn2.assembla.com/svn/ftreal/trunk/app/models
+http://svn2.assembla.com/svn/ftreal
+
+
+
+2009-12-27T01:58:38.965033Z
+1
+ylian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+261e9224-ec32-4209-9950-bab5d1e2621d
+
+parcel.rb
+file
+
+
+
+
+2010-01-18T02:55:04.000000Z
+20867d06531d32298f835efa5f03f9a1
+2009-12-27T01:58:38.965033Z
+1
+ylian
+

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ftreal/!svn/ver/4/trunk/dats/CAMAExports
+END
+ExportValueDetail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportValueDetail.txt
+END
+ExportTaxStatus.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportTaxStatus.txt
+END
+test_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/test_file.rb
+END
+import_db.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/import_db.rb
+END
+ExportPriorAsmts.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportPriorAsmts.txt
+END
+ExportZoning.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportZoning.txt
+END
+ExportImprovement.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportImprovement.txt
+END
+ExportSales.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportSales.txt
+END
+ExportStreetNumber.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportStreetNumber.txt
+END
+parcels_geocoded.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ftreal/!svn/ver/4/trunk/dats/CAMAExports/parcels_geocoded.txt
+END
+parcels.dat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/parcels.dat
+END
+Data Dictionary for CAMA Exported Data.doc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/Data%20Dictionary%20for%20CAMA%20Exported%20Data.doc
+END
+ExportLegal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportLegal.txt
+END
+ExportImprovementDetail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportImprovementDetail.txt
+END
+ExportOwner.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportOwner.txt
+END
+ExportAccount.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/ExportAccount.txt
+END
+output.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ftreal/!svn/ver/1/trunk/dats/CAMAExports/output.txt
+END

@@ -1,0 +1,97 @@
+// Place your application-specific JavaScript functions and classes here
+// This file is automatically included by javascript_include_tag :defaults
+var map;
+var currentFocus = false;
+var centerLatitude = 38.83466;
+var centerLongitude = -77.05510;
+var startZoom = 15;
+var markerHash = {};
+var currentFocus = false;
+
+function addMarker(latitude, longitude, id) {
+    var marker = new GMarker(new GLatLng(latitude, longitude));
+    
+    GEvent.addListener(marker, "click", 
+        function() {
+            focusPoint(id);
+        }
+    );
+    
+    map.addOverlay(marker);
+    return marker;
+}
+
+function windowHeight() { 
+    // Standard browsers (Mozilla, Safari, etc.) 
+    if (self.innerHeight) 
+        return self.innerHeight; 
+    // IE 6 
+    if (document.documentElement && document.documentElement.clientHeight) 
+        return y = document.documentElement.clientHeight; 
+    // IE 5 
+    if (document.body) 
+        return document.body.clientHeight; 
+    // Just in case. 
+    return 0; 
+} 
+
+function handleResize() { 
+    var height = windowHeight(); 
+    height -= document.getElementById('toolbar').offsetHeight - 30; 
+    document.getElementById('map').style.height = height + 'px'; 
+    document.getElementById('sidebar').style.height = height + 'px'; 
+}
+
+function focusPoint(id){ 
+    if (currentFocus) {
+        Element.removeClassName("sidebar-item-"+currentFocus, "current");
+    }
+    Element.addClassName("sidebar-item-"+id, "current");
+    markerHash[id].marker.openInfoWindowHtml(markerHash[id].address); 
+    currentFocus = id;
+}
+
+function filter(zip) {
+    for (i=0; i<markers.length; i++) {
+        var current = markers[i].parcel;
+        if (current.zip == zip || 'All' == zip) {
+            if (!markerHash[current.id].visible) {
+                Element.show("sidebar-item-"+markers[i].parcel.id);
+                map.addOverlay(markerHash[current.id].marker);
+                markerHash[current.id].visible = true;
+            }
+        } else {
+            if (markerHash[current.id].visible) {
+                Element.hide("sidebar-item-"+markers[i].parcel.id);
+                map.removeOverlay(markerHash[current.id].marker);
+                markerHash[current.id].visible = false;
+            }
+        }
+    }
+}
+
+function init() {
+    handleResize();
+    map = new GMap($("map"));
+    map.addControl(new GSmallMapControl());
+    map.addControl(new GMapTypeControl());
+    map.setCenter(new GLatLng(centerLatitude, centerLongitude), startZoom);
+    
+    /*
+    // show the coordinates for the point where the map is clicked
+    GEvent.addListener(map, "click",
+        function(overlay, latlng) {
+            alert("lat:" + latlng.lat() + " lng:" + latlng.lng());
+        }
+    );
+    */
+    
+    for (i=0; i<markers.length; i++) {
+        var current = markers[i].parcel;
+        marker = addMarker(current.lat, current.lng, current.id);
+        markerHash[current.id] = {marker:marker, address:current.address, visible:true};
+    }
+}
+window.onload = init;
+window.onunload = GUnload;
+window.resize = handleResize;

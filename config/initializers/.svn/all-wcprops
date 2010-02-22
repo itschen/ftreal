@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ftreal/!svn/ver/1/trunk/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ftreal/!svn/ver/1/trunk/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ftreal/!svn/ver/1/trunk/config/initializers/session_store.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ftreal/!svn/ver/1/trunk/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ftreal/!svn/ver/1/trunk/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ftreal/!svn/ver/1/trunk/config/initializers/mime_types.rb
+END

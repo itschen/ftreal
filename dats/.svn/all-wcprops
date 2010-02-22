@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/ftreal/!svn/ver/12/trunk/dats
+END
+ftreal_mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ftreal/!svn/ver/12/trunk/dats/ftreal_mysql.sql
+END
+cama_tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ftreal/!svn/ver/10/trunk/dats/cama_tables.sql
+END
+cama_imports.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ftreal/!svn/ver/10/trunk/dats/cama_imports.sql
+END

@@ -1,0 +1,40 @@
+8
+
+dir
+11
+http://svn2.assembla.com/svn/ftreal/trunk/app
+http://svn2.assembla.com/svn/ftreal
+
+
+
+2009-12-29T17:53:24.651996Z
+11
+ylian
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+261e9224-ec32-4209-9950-bab5d1e2621d
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+views
+dir
+

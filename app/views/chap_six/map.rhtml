@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"➥
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		
+				<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAeiHm3op2PZJOTlqE4m-xZRSNALxHS9KdVZMSEXKo704HT4jVDhSl8BrOOwLJoUj96rgPULuF3m0ZHg" type="text/javascript"></script>
+
+		<%=javascript_include_tag 'application' %>
+		
+		<script type="text/javascript">
+		var parrays=<%=@parray.to_json%>;
+		</script>
+		
+		<%stylesheet_link_tag 'style'%>
+	</head>
+	
+	<body id="body">
+		<div id="map"></div>
+	</body>
+</html>

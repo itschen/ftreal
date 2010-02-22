@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/ftreal/!svn/ver/9/trunk/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ftreal/!svn/ver/1/trunk/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ftreal/!svn/ver/1/trunk/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ftreal/!svn/ver/1/trunk/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ftreal/!svn/ver/1/trunk/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ftreal/!svn/ver/1/trunk/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/ftreal/!svn/ver/1/trunk/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ftreal/!svn/ver/1/trunk/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ftreal/!svn/ver/1/trunk/script/plugin
+END

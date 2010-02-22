@@ -1,0 +1,7 @@
+class Parcel < ActiveRecord::Base
+  #set_primary_key 'acct_no'
+  
+  def full_address
+    "#{address}, #{city}, #{state}, #{zip}"
+  end
+end

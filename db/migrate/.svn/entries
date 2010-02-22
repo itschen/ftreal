@@ -1,0 +1,40 @@
+8
+
+dir
+16
+http://svn2.assembla.com/svn/ftreal/trunk/db/migrate
+http://svn2.assembla.com/svn/ftreal
+
+
+
+2010-01-21T20:30:21.198329Z
+16
+ylian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+261e9224-ec32-4209-9950-bab5d1e2621d
+
+20091226190710_create_parcels.rb
+file
+
+
+
+
+2010-01-21T20:30:33.000000Z
+dbaeadea226bc12b3c292ee77efd2e1a
+2010-01-21T20:30:21.198329Z
+16
+ylian
+

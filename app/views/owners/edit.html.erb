@@ -1,0 +1,24 @@
+<h1>Editing owner</h1>
+
+<% form_for(@owner) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </p>
+  <p>
+    <%= f.label :account_no %><br />
+    <%= f.text_field :account_no %>
+  </p>
+  <p>
+    <%= f.label :percentage_own %><br />
+    <%= f.text_field :percentage_own %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @owner %> |
+<%= link_to 'Back', owners_path %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Id:</b>
+  <%=h @owner.id %>
+</p>
+
+<p>
+  <b>Account no:</b>
+  <%=h @owner.account_no %>
+</p>
+
+<p>
+  <b>Percentage own:</b>
+  <%=h @owner.percentage_own %>
+</p>
+
+
+<%= link_to 'Edit', edit_owner_path(@owner) %> |
+<%= link_to 'Back', owners_path %>
