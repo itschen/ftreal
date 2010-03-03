@@ -1,7 +1,5 @@
-<h1>Listing contacts</h1>
-
-<table>
-  <tr>
+<table id='contact-list'>
+  <tr class='titles'>
     <th>Last name</th>
     <th>First name</th>
     <th>Company name</th>
@@ -10,13 +8,7 @@
     <th>Telephone</th>
     <th>Mobile</th>
     <th>Fax</th>
-    <th>Blog</th>
-    <th>Facebook</th>
-    <th>Twitter</th>
-    <th>Street no</th>
-    <th>Street name</th>
-    <th>Street type</th>
-    <th>Street dir</th>
+	<th>Full Address</th>
     <th>City</th>
     <th>State</th>
     <th>Zip</th>
@@ -32,19 +24,16 @@
     <td><%=h contact.telephone %></td>
     <td><%=h contact.mobile %></td>
     <td><%=h contact.fax %></td>
-    <td><%=h contact.blog %></td>
-    <td><%=h contact.facebook %></td>
-    <td><%=h contact.twitter %></td>
-    <td><%=h contact.street_no %></td>
-    <td><%=h contact.street_name %></td>
-    <td><%=h contact.street_type %></td>
-    <td><%=h contact.street_dir %></td>
+	<td><%=h contact.full_address %></td>
     <td><%=h contact.city %></td>
     <td><%=h contact.state %></td>
     <td><%=h contact.zip %></td>
-    <td><%= link_to 'Show', contact %></td>
-    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-    <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    <td class="list-actions">
+		<%= link_to 'Edit', edit_contact_path(contact) %></br>
+        <%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+	
   </tr>
 <% end %>
 </table>

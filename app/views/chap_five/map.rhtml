@@ -37,7 +37,7 @@
 				<ul id="sidebar-list">
 					<%@parcels.each do |parcel|%>
 						<li id="sidebar-item-<%parcel.id%>">
-							<%= link_to_function "<strong>#{parcel.street_no} #{parcel.street_name}</strong> #{parcel.zip}", "focusPoint(#{parcel.id})"%>
+							<%= link_to_function "<strong>#{parcel.full_address}</strong> #{parcel.pertinent_info}", "focusPoint(#{parcel.id})"%>
 						<li>
 					<%end%>
 				</ul>

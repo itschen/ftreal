@@ -138,3 +138,35 @@ INSERT INTO parcels (acct_no, parcel_nb,acct_type,street_no,street_dir,street_na
 		    FROM ftreal_test.account a
 			  WHERE locationstreetname="MILL";
 
+#Insert Data from Original Tables into Merged Table
+UPDATE parcels p
+INNER JOIN ftreal_test.zoning z
+ON (p.acct_no=z.accountno)
+SET p.zoning = REPLACE(z.zoning,'"','');
+
+UPDATE parcels p
+INNER JOIN ftreal_test.valuedetail v
+ON (p.acct_no=v.accountno)
+SET p.acres = v.acres;
+
+UPDATE parcels p
+INNER JOIN ftreal_test.valuedetail v
+ON (p.acct_no=v.accountno)
+SET p.lotsf = v.sqft
+WHERE v.valuetype="LAND";
+
+UPDATE parcels p
+INNER JOIN ftreal_test.improvement i
+ON (p.acct_no=i.accountno)
+SET p.stories = i.stories;
+
+UPDATE parcels p
+INNER JOIN ftreal_test.improvement i
+ON (p.acct_no=i.accountno)
+SET p.yr_blt = i.yrblt;
+
+UPDATE parcels p
+INNER JOIN ftreal_test.improvement i
+ON (p.acct_no=i.accountno)
+SET p.grossf = i.sf;
+

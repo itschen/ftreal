@@ -2,14 +2,13 @@ class ChapFiveController < ApplicationController
 
 def map
  @parcels=Parcel.find :all,
-                      :conditions=>"lat IS NOT NULL"
+                      :conditions=>"lat IS NOT NULL AND acct_type='COMMERCIAL'"
  
  @parray=Array.new
  @parcels.each do |parcel|
-   if parcel.lat != nil
-     @parray.push({:latitude=>parcel.lat, :longitude=>parcel.lng, :id=>parcel.id, :address=>parcel.street_no+" "+parcel.street_name})
-   end
- end
+     @parray.push({:latitude=>parcel.lat, :longitude=>parcel.lng, :id=>parcel.id, :address=>parcel.street_no+" "+parcel.street_name, :lotsize=>parcel.lotsf})
+
+end
  
 end
  

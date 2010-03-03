@@ -1,0 +1,106 @@
+/* @override http://localhost:3000/stylesheets/ftreal.css?1267581067 */
+
+/* Global styles */
+
+body{
+	margin:0;
+	padding:0;
+	font-family: Helvetica, sans-serif;
+}
+
+#pagewrapper{
+	width:900px;
+	margin: 10px auto;
+	padding: 0;
+	border: 1px solid #aaa;
+	font-family: Helvetica, sans-serif;
+}
+
+#content{
+	padding:20px 10px;
+}
+
+#header{
+	background-color: #fce0ac;
+	margin: 0;
+	padding: 0;
+}
+
+#header p{
+	padding: 20px 10px;
+	font-size: 24px;
+	margin: 0;
+	color: black;
+	font-weight: bold;
+	font-family:arial, helvetica, sans-serif;
+}
+
+#footer{
+	background-color: #fce0ac;
+	padding-top: 6px;
+	badding-bottom:6px;
+	clear: both;
+	border-top: 2px solid #333;
+	text-align: center;
+}
+
+#footer p, #footer a{
+	font-size: 12px;
+	margin: 0;
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#navbar ul{
+	padding: 0;
+	margin: 0;
+	background-color: #999;
+	width: 100%;
+	float: left;
+	list-style: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+#navbar li{
+	display: inline;
+	color: white;
+	float:left;
+	border-right: 1px solid #333;
+	font-family: helvetica, sans-serif;
+}
+
+#navbar li a{
+	padding: 0.2em 0.7em;
+	background-color: #999;
+	color: white;
+	float: left;
+	text-decoration: none;
+}
+
+#navbar ul li a:hover{
+	background-color: #333;
+	color: #fff;
+}
+
+/* Contact Styles Index*/
+#contact-list table{
+	border-collapse: collapse;
+}
+
+#contact-list .titles{
+	font-size:12px;
+	font-weight: bold;
+}
+
+#contact-list td{
+	font-size: 12px;
+}
+
+#contact-list .list-actions{
+	font-size: x-small;
+	text-align: right;
+	padding-left: 1en;
+}
+

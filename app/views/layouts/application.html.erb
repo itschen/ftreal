@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "htpp://www.w3.org">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 	<head>
+		<meta http-equiv="Content Type" content="text/html; charset=UTF-8" />
+	 	<title>FTReal Map Contact Management</title>
+		<%= stylesheet_link_tag 'ftreal' %>
+	</head>
+	<body>
+		<div id='pagewrapper'>
+			<div id='header'>
+				<p>FTReal Map Contact Management</p>
+			</div>
+			<div id='navbar'>
+				<ul>
+					<li><%= link_to 'Maps', {:controller => 'chap_five', :action =>'map'} %></li>
+					<li><%= link_to 'Contacts', {:controller => 'contacts', :action =>'index'} %></li>
+				</ul>
+			</div>
+			<div id ='content'>
+				<%= yield %>
+			</div>
+			<div id='footer'>
+				<p>Copyright FTREAL 2010</p>
+			</div>
+		</div>
+	</body>
+</html>
+	

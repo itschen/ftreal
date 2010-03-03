@@ -1,6 +1,6 @@
 var map;
-var centerLatitude = 38.80547;
-var centerLongitude = -77.074585;
+var centerLatitude = 38.802577;
+var centerLongitude = -77.063448;
 var startZoom = 15;
 var markerHash={};
 var currentFocus=false;
@@ -51,7 +51,8 @@ function init() {
 	for(i=0; i<parrays.length; i++){
 		var current = parrays[i];
 		marker = addMarker(current.latitude, current.longitude, current.id);
-		markerHash[current.id]={marker:marker,address:current.address, visible:true};
+		markerHash[current.id]={marker:marker,address:current.address,lotsize:current.lotsize, visible:true};
+//markerHash[current.id]={marker:marker,lotsize:current.lotsize, visible:false};
 		}
 }
 
