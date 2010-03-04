@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100303050316) do
+ActiveRecord::Schema.define(:version => 20100304025153) do
 
   create_table "contacts", :force => true do |t|
     t.string   "last_name",    :limit => 64
@@ -80,5 +80,22 @@ ActiveRecord::Schema.define(:version => 20100303050316) do
   end
 
   add_index "parcels", ["acct_no"], :name => "index_parcels_on_acct_no"
+
+  create_table "tasks", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "assigned_to"
+    t.integer  "completed_by"
+    t.string   "name",         :limit => 200
+    t.integer  "contact_id"
+    t.integer  "contact_type"
+    t.string   "priority",     :limit => 32
+    t.string   "category",     :limit => 32
+    t.string   "bucket",       :limit => 32
+    t.datetime "due_at"
+    t.datetime "completed_at"
+    t.datetime "deleted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

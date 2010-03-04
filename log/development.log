@@ -8730,3 +8730,200 @@ Migrating to AddAddressToContact (20100303050316)
   [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
   [4;35;1mSQL (1.9ms)[0m   [0mdescribe `parcels`[0m
   [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `parcels`[0m
+  [4;36;1mSQL (142.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChapFiveController#map (for 127.0.0.1 at 2010-03-03 12:32:20) [GET]
+  [4;35;1mParcel Load (3930.9ms)[0m   [0mSELECT * FROM `parcels` WHERE (lat IS NOT NULL AND acct_type='COMMERCIAL') [0m
+  [4;36;1mParcel Columns (155.9ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+Rendering template within layouts/application
+Rendering chap_five/map
+Completed in 5666ms (View: 1424, DB: 4229) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-03-03 12:32:30) [GET]
+  [4;36;1mContact Load (76.7ms)[0m   [0;1mSELECT * FROM `contacts` [0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Columns (153.3ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Completed in 736ms (View: 474, DB: 230) | 200 OK [http://localhost/contacts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChapFiveController#map (for 127.0.0.1 at 2010-03-03 12:32:35) [GET]
+  [4;35;1mParcel Load (29.6ms)[0m   [0mSELECT * FROM `parcels` WHERE (lat IS NOT NULL AND acct_type='COMMERCIAL') [0m
+  [4;36;1mParcel Columns (40.5ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+Rendering template within layouts/application
+Rendering chap_five/map
+Completed in 103ms (View: 22, DB: 70) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-03-03 12:32:46) [GET]
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM `contacts` [0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Completed in 24ms (View: 18, DB: 2) | 200 OK [http://localhost/contacts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChapFiveController#map (for 127.0.0.1 at 2010-03-03 12:32:47) [GET]
+  [4;35;1mParcel Load (29.0ms)[0m   [0mSELECT * FROM `parcels` WHERE (lat IS NOT NULL AND acct_type='COMMERCIAL') [0m
+  [4;36;1mParcel Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+Rendering template within layouts/application
+Rendering chap_five/map
+Completed in 59ms (View: 19, DB: 31) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChapFiveController#map (for 127.0.0.1 at 2010-03-03 12:33:08) [GET]
+  [4;36;1mParcel Load (28.8ms)[0m   [0;1mSELECT * FROM `parcels` WHERE (lat IS NOT NULL AND acct_type='COMMERCIAL') [0m
+  [4;35;1mParcel Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `parcels`[0m
+Rendering template within layouts/application
+Rendering chap_five/map
+Completed in 113ms (View: 73, DB: 31) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ChapFiveController#map (for 127.0.0.1 at 2010-03-03 12:33:14) [GET]
+  [4;35;1mParcel Load (29.3ms)[0m   [0mSELECT * FROM `parcels` WHERE (lat IS NOT NULL AND acct_type='COMMERCIAL') [0m
+  [4;36;1mParcel Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+Rendering template within layouts/application
+Rendering chap_five/map
+Completed in 59ms (View: 18, DB: 31) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-03-03 12:33:19) [GET]
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM `contacts` [0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `contacts`[0m
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/contacts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;35;1mSQL (16.3ms)[0m   [0mCREATE TABLE `tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `assigned_to` int(11), `completed_by` int(11), `name` varchar(200), `asset_id` int(11), `asset_type` integer, `priority` varchar(32), `category` varchar(32), `bucket` varchar(32), `due_at` datetime, `completed_at` datetime, `deleted_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100304025153')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `owners`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `owners`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `owners`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `parcels`[0m
+  [4;36;1mSQL (51.6ms)[0m   [0;1mSHOW KEYS FROM `parcels`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (13.8ms)[0m   [0;1mdescribe `tasks`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `owners`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mdescribe `owners`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `owners`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `parcels`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSHOW KEYS FROM `parcels`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `tasks`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100304025153)
+  [4;35;1mSQL (54.9ms)[0m   [0mDROP TABLE `tasks`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100304025153'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (12.7ms)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `owners`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `owners`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `owners`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `parcels`[0m
+  [4;36;1mSQL (26.8ms)[0m   [0;1mSHOW KEYS FROM `parcels`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParcels (20091226190710)
+Migrating to CreateOwners (20100209213441)
+Migrating to CreateContacts (20100211163529)
+Migrating to AddAddressToContact (20100303050316)
+Migrating to CreateTasks (20100304025153)
+  [4;35;1mSQL (16.9ms)[0m   [0mCREATE TABLE `tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `assigned_to` int(11), `completed_by` int(11), `name` varchar(200), `contact_id` int(11), `contact_type` integer, `priority` varchar(32), `category` varchar(32), `bucket` varchar(32), `due_at` datetime, `completed_at` datetime, `deleted_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100304025153')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `owners`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `owners`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW KEYS FROM `owners`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `parcels`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `parcels`[0m
+  [4;36;1mSQL (22.7ms)[0m   [0;1mSHOW KEYS FROM `parcels`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `tasks`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mdescribe `tasks`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `tasks`[0m
